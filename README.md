@@ -1,4 +1,4 @@
-<h3 align="center"> Hi there 👋 </h3>
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Hi+there+👋;I+am+a+Full+Stack+Developer;I+love+coding!)](https://git.io/typing-svg)
 
 <div id="header" align="center">
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDFjMzMwd200NG8xYzEwcDJpcm9kaXJ2MjdzZnI3MW5mdG13OHNobSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ws6T5PN7wHv3cY8xy8/giphy.gif" width="50%">
@@ -48,7 +48,15 @@ In my free time, I enjoy:
   <a href="https://www.python.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="typescript" width="40" height="40"/> </a>
 </p>
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=useless007&show_icons=true&locale=en&layout=compact" alt="useless007" /></p>
+| Languages | Stats |
+|-----------|-------|
+| ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=useless007&show_icons=true&locale=en&layout=compact) | ![Stats](https://github-readme-stats.vercel.app/api?username=useless007&theme=radical&show_icons=true&count_private=true) |
+
+
+
+
+
+
 
 
 
