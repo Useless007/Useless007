@@ -6,10 +6,6 @@
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDFjMzMwd200NG8xYzEwcDJpcm9kaXJ2MjdzZnI3MW5mdG13OHNobSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ws6T5PN7wHv3cY8xy8/giphy.gif" width="50%">
 </div>
 
-<div align="center">
-  <img src="dist/github-contribution-grid-snake.svg" alt="snake animation" />
-</div>
-
 ### About Me :
 
 I'm Useless007, a Full Stack Developer passionate about self development. Welcome to my corner of GitHub!
