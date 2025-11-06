@@ -35,23 +35,23 @@ In my free time, I enjoy:
   </a>
   <h4>Languages</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=cpp,cs,java,js,ts,php,py,go,zig" />
+    <img src="https://skillicons.dev/icons?i=js,ts,py,go,java,cpp,cs,php,zig" />
   </a>
   <h4>Frontend Development</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,bootstrap,tailwind" />
+    <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,svelte,vite,tailwind,bootstrap,htmx,threejs" />
   </a>
   <h4>Backend Development</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,fastapi,elysia,bun" />
+    <img src="https://skillicons.dev/icons?i=nodejs,bun,elysia,fastapi,nginx,apache,socketio" />
   </a>
   <h4>Databases</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=mysql,postgres,redis,prisma" />
+    <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,redis,prisma" />
   </a>
   <h4>Tools & Platforms</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=linux,git,arduino,dotnet,anaconda,cloudflare,photoshop,docker,figma" />
+    <img src="https://skillicons.dev/icons?i=linux,arch,windows,apple,git,docker,aws,vercel,netlify,cloudflare,arduino,raspberrypi,anaconda,dotnet,opencv,photoshop,figma,vitest" />
   </a>
 </div>
 
