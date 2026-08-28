@@ -47,7 +47,7 @@ BLIPS = [(35, 30), (150, 44), (255, 18)]
 
 STACK = [
     ("lang", ["Go", "TypeScript", "Python", "Zig", "Java"]),
-    ("web", ["Next.js", "Svelte", "Elysia", "Bun", "FastAPI", "Fiber", "Tailwind"]),
+    ("web", ["Next.js", "Svelte", "Astro", "Elysia", "Hono", "Bun", "FastAPI", "Fiber", "Tailwind"]),
     ("data", ["PostgreSQL", "Redis", "Neo4j", "SQLite", "Prisma"]),
     ("infra", ["Docker", "Linux", "Cloudflare Workers", "GitHub Actions", "Wails"]),
     ("ai", ["Ollama", "YOLO", "Graph RAG", "MCP"]),

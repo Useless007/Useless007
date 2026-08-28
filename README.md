@@ -27,6 +27,19 @@ and something checking the output before anyone is asked to trust it.
 **[zig-typist](https://github.com/Useless007/zig-typist)** — Terminal typing trainer for Thai and English layouts. Sessions append to JSON Lines, so the history stays yours and stays greppable.<br>
 <sub>Zig</sub>
 
+### Not public
+
+The work I spend the longest on mostly lives in private repos. Short version:
+
+**icefactory-app** — Multi-tenant plant management for an ice factory, commissioned and delivered in stages. Every query scopes to the tenant and branch on the session and never to anything the request sends, and every write lands in an append-only audit log with personal fields redacted. The tests fail if any of those rules is broken.<br>
+<sub>Go · Next.js · PostgreSQL</sub>
+
+**guess-my-song** — Guess-the-song game where every clip comes from the player's own Spotify library rather than a recommendation engine. Hono on Cloudflare Workers, one Durable Object per session, both apps behind one hostname so the cookie stays first-party and there is no CORS anywhere. A policy test fails the build if any code reaches for the endpoints the design rules out.<br>
+<sub>TypeScript · Hono · Durable Objects · Astro</sub>
+
+**pea-calculator-backup** — Electricity-meter tracker. The interesting half is the backup path: the database is encrypted locally before anything leaves the machine, the key never enters Git or the image, and the scheduled job runs the backups it missed rather than skipping them.<br>
+<sub>Node.js · Docker</sub>
+
 ### Tools I reach for
 
 <picture>
@@ -41,6 +54,6 @@ and something checking the output before anyone is asked to trust it.
   <img src="dist/github-contribution-grid-snake.svg" alt="A snake eating this year's contribution graph">
 </picture>
 
-<sub>ITI, KMUTNB — Bangkok. Off-hours: power-law charts, Kirby on the GBA, and a dog named Panda.</sub>
+<sub>Bangkok · IT graduate, KMUTNB · off-hours: power-law charts, Kirby on the GBA, and a dog named Panda.</sub>
 
 <!-- Banner and stack strip are generated locally: python3 assets/build_assets.py -->
