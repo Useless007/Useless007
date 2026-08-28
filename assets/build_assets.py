@@ -32,7 +32,7 @@ THEMES = {
 }
 
 NAME = "useless007"
-EYEBROW = "BANGKOK, TH"
+EYEBROW = "THAILAND"
 ROTATING = [
     "go services, next.js in front, postgres underneath",
     "local models on my own gpu, not someone else's api",
@@ -90,7 +90,7 @@ def header(theme):
 
     wedge_end = polar(RADAR_CX, RADAR_CY, 58, 52)
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{NAME} — full-stack developer, Bangkok">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{NAME} — full-stack developer, Thailand">
 <title>{NAME}</title>
 <defs>
   <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">

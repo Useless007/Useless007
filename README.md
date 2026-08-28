@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" alt="useless007 — full-stack developer, Bangkok">
+  <img src="assets/header-light.svg" alt="useless007 — full-stack developer, Thailand">
 </picture>
 
 I build the whole thing — the Go or TypeScript service, the UI in front of it, and the box it
@@ -54,6 +54,6 @@ The work I spend the longest on mostly lives in private repos. Short version:
   <img src="dist/github-contribution-grid-snake.svg" alt="A snake eating this year's contribution graph">
 </picture>
 
-<sub>Bangkok · IT graduate, KMUTNB · off-hours: power-law charts, Kirby on the GBA, and a dog named Panda.</sub>
+<sub>ITI, KMUTNB Prachinburi · off-hours: power-law charts, Kirby on the GBA, and a dog named Panda.</sub>
 
 <!-- Banner and stack strip are generated locally: python3 assets/build_assets.py -->
