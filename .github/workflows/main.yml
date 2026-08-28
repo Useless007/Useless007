@@ -16,15 +16,15 @@ jobs:
       contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Generate snake animation
         uses: platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=#0969da&color_dots=#eaeef2,#b6d4fa,#7cb2f5,#3d8bf0,#0969da
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#58a6ff&color_dots=#161b22,#0d3868,#0f5299,#2f81f7,#58a6ff
 
       - name: Commit and push if changed
         run: |
