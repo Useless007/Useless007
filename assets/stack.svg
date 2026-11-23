@@ -1,10 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 234" width="880" height="234" role="img" aria-label="Tools I reach for">
 <title>Tools I reach for</title>
 <style>
+  svg{--ink:#1f2328;--dim:#59636e;--faint:#818b98;--line:#d1d9e0;--accent:#0969da;--ok:#1a7f37}
+  @media (prefers-color-scheme:dark){svg{--ink:#e6edf3;--dim:#8b949e;--faint:#6e7681;--line:#2c333c;--accent:#58a6ff;--ok:#3fb950}}
   text{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace}
-  .glabel{font-size:11px;letter-spacing:2.4px;fill:#818b98;text-anchor:end}
-  .chip rect{fill:none;stroke:#d1d9e0;stroke-width:1}
-  .chip text{font-size:12.5px;fill:#59636e;text-anchor:middle}
+  .glabel{font-size:11px;letter-spacing:2.4px;fill:var(--faint);text-anchor:end}
+  .chip rect{fill:none;stroke:var(--line);stroke-width:1}
+  .chip text{font-size:12.5px;fill:var(--dim);text-anchor:middle}
   .chip{animation:rise .5s cubic-bezier(.2,.7,.2,1) backwards}
   .c0{animation-delay:0.050s}.c1{animation-delay:0.078s}.c2{animation-delay:0.106s}.c3{animation-delay:0.134s}.c4{animation-delay:0.162s}.c5{animation-delay:0.190s}.c6{animation-delay:0.218s}.c7{animation-delay:0.246s}.c8{animation-delay:0.274s}.c9{animation-delay:0.302s}.c10{animation-delay:0.330s}.c11{animation-delay:0.358s}.c12{animation-delay:0.386s}.c13{animation-delay:0.414s}.c14{animation-delay:0.442s}.c15{animation-delay:0.470s}.c16{animation-delay:0.498s}.c17{animation-delay:0.526s}.c18{animation-delay:0.554s}.c19{animation-delay:0.582s}.c20{animation-delay:0.610s}.c21{animation-delay:0.638s}.c22{animation-delay:0.666s}.c23{animation-delay:0.694s}.c24{animation-delay:0.722s}.c25{animation-delay:0.750s}.c26{animation-delay:0.778s}.c27{animation-delay:0.806s}.c28{animation-delay:0.834s}.c29{animation-delay:0.862s}.c30{animation-delay:0.890s}.c31{animation-delay:0.918s}.c32{animation-delay:0.946s}
   @keyframes rise{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}

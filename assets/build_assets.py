@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Generate the README's SVGs, dark and light, and the markup that shows the cards.
+"""Generate the README's SVGs and the markup that shows them.
 
 Every image the profile renders lives in this repo; no third-party image services.
-The README switches variants with <picture media="(prefers-color-scheme: dark)">.
+Each SVG carries a light and a dark palette and picks one with prefers-color-scheme.
 The script also rewrites the README blocks between <!-- gen:NAME --> markers, so the
-alt text always says what the cards say.
+alt text always says what the images say.
 
     python3 assets/build_assets.py
 """
@@ -40,6 +40,8 @@ THEMES = {
         "ok": "#1a7f37",
     },
 }
+# Generators write var(--name); svg() defines both palettes, so one file serves both themes.
+C = {k: f"var(--{k})" for k in THEMES["light"]}
 
 NAME = "useless007"
 EYEBROW = "THAILAND"
@@ -147,11 +149,20 @@ def polar(cx, cy, angle_deg, radius):
     return cx + radius * cos(a), cy + radius * sin(a)
 
 
+def palette(theme):
+    return ";".join(f"--{k}:{v}" for k, v in THEMES[theme].items())
+
+
 def svg(w, h, label, style, body):
+    # An SVG inside <img> takes prefers-color-scheme from the color-scheme of the page
+    # around it (Chrome, Firefox), and GitHub sets that from the reader's theme.
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" '
         f'height="{h}" role="img" aria-label="{escape(label)}">\n'
-        f"<title>{escape(label)}</title>\n<style>\n  text{{font-family:{MONO}}}\n{style}\n</style>\n"
+        f"<title>{escape(label)}</title>\n<style>\n"
+        f"  svg{{{palette('light')}}}\n"
+        f"  @media (prefers-color-scheme:dark){{svg{{{palette('dark')}}}}}\n"
+        f"  text{{font-family:{MONO}}}\n{style}\n</style>\n"
         f"{body}\n</svg>\n"
     )
 
@@ -160,7 +171,7 @@ def dot_grid(c, w, h):
     """The faded dot grid behind the header and the rr-stack card."""
     return f'''<defs>
   <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-    <circle cx="1" cy="1" r="1" fill="{c['line']}"/>
+    <circle cx="1" cy="1" r="1" style="fill:{c['line']}"/>
   </pattern>
   <linearGradient id="gridFade" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="#fff" stop-opacity="0"/>
@@ -195,8 +206,8 @@ def chip_style(c, fs=10.5):
     )
 
 
-def header(theme):
-    c = THEMES[theme]
+def header():
+    c = C
     sweep_period = 8.0
     slot = 6  # seconds each rotating line stays up
     cycle = slot * len(ROTATING)
@@ -299,9 +310,9 @@ def lit(name, t, period, off, on, hold_until, fade=0.3):
     )
 
 
-def rr_stack(theme):
+def rr_stack():
     """The one animated moment below the header: a field lights up layer by layer."""
-    c = THEMES[theme]
+    c = C
     w, h, x0 = W, 268, 36
     period, step, hold = 9.0, 0.7, 7.8
     fs, pad, box_h, box_y = 11, 10, 32, 166
@@ -377,8 +388,8 @@ CARD_W, CARD_H, CARD_PAD = 436, 158, 22
 CARD_FS, CARD_LINES = 12, 3
 
 
-def card(theme, name, desc, tags):
-    c = THEMES[theme]
+def card(name, desc, tags):
+    c = C
     per_line = int((CARD_W - CARD_PAD * 2) / (CARD_FS * ADV))
     lines = textwrap.wrap(desc, per_line)
     assert len(lines) <= CARD_LINES, f"{name}: description wraps to {len(lines)} lines"
@@ -402,8 +413,8 @@ def card(theme, name, desc, tags):
     return svg(CARD_W, CARD_H, f"{name}: {desc}", style, body)
 
 
-def private_panel(theme):
-    c = THEMES[theme]
+def private_panel():
+    c = C
     x0, fs, lh, top = 36, 12, 18, 22
     per_line = int((W - x0 * 2) / (fs * ADV))
     rows, y = [], top
@@ -441,8 +452,8 @@ def private_panel(theme):
     return svg(W, h, label, style, "\n".join(body))
 
 
-def stack(theme):
-    c = THEMES[theme]
+def stack():
+    c = C
     chip_h, chip_fs, gap, row_gap = 27, 12.5, 8, 12
     label_x, chips_x, right = 64, 84, W
     pad = 13
@@ -487,41 +498,34 @@ def stack(theme):
     return svg(W, height, "Tools I reach for", style, body)
 
 
-def picture(stem, alt, width=None, href=None):
+def image(stem, alt, width=None, href=None):
+    # A plain <img>, not <picture>: GitHub splits <a><picture> apart, and the image then
+    # links to the SVG file instead of href. The SVG switches theme by itself.
     size = f' width="{width}"' if width else ""
     alt = escape(alt, quote=False).replace('"', "&quot;")
-    if href:
-        # GitHub wraps every <img> in its own link, which splits an <a><picture> apart:
-        # the image loses its dark variant and links to the SVG file. Linked images use
-        # the #gh-*-mode-only fragments instead, which GitHub hides per theme.
-        return "".join(
-            f'<a href="{href}"><img src="assets/{stem}-{t}.svg#gh-{t}-mode-only"{size} alt="{alt}"></a>'
-            for t in THEMES
-        )
-    return (
-        f'<picture><source media="(prefers-color-scheme: dark)" srcset="assets/{stem}-dark.svg">'
-        f'<img src="assets/{stem}-light.svg"{size} alt="{alt}"></picture>'
-    )
+    img = f'<img src="assets/{stem}.svg"{size} alt="{alt}">'
+    return f'<a href="{href}">{img}</a>' if href else img
 
 
 def readme_blocks():
     work = "\n".join(
-        picture(f"card-{name}", f"{name}: {desc} ({', '.join(tags)})", "49%", f"{GH}/{name}")
+        image(f"card-{name}", f"{name}: {desc} ({', '.join(tags)})", "49%", f"{GH}/{name}")
         for name, desc, tags in WORK
     )
-    private = picture(
+    private = image(
         "private",
         " ".join(f"{n}: {d} ({', '.join(t)})." for n, d, t in PRIVATE),
     )
-    tools = picture("stack", "; ".join(", ".join(items) for _, items in STACK))
-    rr = picture(
+    tools = image("stack", "; ".join(", ".join(items) for _, items in STACK))
+    rr = image(
         "rr-stack",
         "rr-stack: React Router + Rust (Axum), typed from the database to the screen. The same "
         "title field lights up in " + ", ".join(layer for layer, _ in RR_CHAIN)
         + ", then bun run check exits 0.",
         href=f"{GH}/rr-stack",
     )
-    return {"rr": rr, "work": f"<p>\n{work}\n</p>", "private": private, "tools": tools}
+    header_img = image("header", f"{NAME}, full-stack developer in Thailand")
+    return {"header": header_img, "rr": rr, "work": f"<p>\n{work}\n</p>", "private": private, "tools": tools}
 
 
 def write_readme():
@@ -534,18 +538,17 @@ def write_readme():
 
 
 def main():
-    for theme in THEMES:
-        files = {
-            "header": header(theme),
-            "rr-stack": rr_stack(theme),
-            "private": private_panel(theme),
-            "stack": stack(theme),
-        }
-        for name, desc, tags in WORK:
-            files[f"card-{name}"] = card(theme, name, desc, tags)
-        for stem, content in files.items():
-            (OUT / f"{stem}-{theme}.svg").write_text(content, encoding="utf-8")
-        print(f"wrote {len(files)} {theme} svgs")
+    files = {
+        "header": header(),
+        "rr-stack": rr_stack(),
+        "private": private_panel(),
+        "stack": stack(),
+    }
+    for name, desc, tags in WORK:
+        files[f"card-{name}"] = card(name, desc, tags)
+    for stem, content in files.items():
+        (OUT / f"{stem}.svg").write_text(content, encoding="utf-8")
+    print(f"wrote {len(files)} svgs")
     write_readme()
     print("updated README.md blocks")
 

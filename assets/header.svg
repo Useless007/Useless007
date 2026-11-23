@@ -1,26 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 190" width="880" height="190" role="img" aria-label="useless007, full-stack developer in Thailand">
 <title>useless007, full-stack developer in Thailand</title>
 <style>
+  svg{--ink:#1f2328;--dim:#59636e;--faint:#818b98;--line:#d1d9e0;--accent:#0969da;--ok:#1a7f37}
+  @media (prefers-color-scheme:dark){svg{--ink:#e6edf3;--dim:#8b949e;--faint:#6e7681;--line:#2c333c;--accent:#58a6ff;--ok:#3fb950}}
   text{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace}
-  .panel{fill:none;stroke:#2c333c;stroke-width:1}
-  .eyebrow{font-size:11.5px;letter-spacing:3.6px;fill:#6e7681;animation:fade .9s ease-out .05s backwards}
-  .dot{fill:#58a6ff;animation:pulse 3.2s ease-in-out infinite}
-  .name{font-size:58px;font-weight:700;letter-spacing:-2px;fill:#e6edf3}
+  .panel{fill:none;stroke:var(--line);stroke-width:1}
+  .eyebrow{font-size:11.5px;letter-spacing:3.6px;fill:var(--faint);animation:fade .9s ease-out .05s backwards}
+  .dot{fill:var(--accent);animation:pulse 3.2s ease-in-out infinite}
+  .name{font-size:58px;font-weight:700;letter-spacing:-2px;fill:var(--ink)}
   .l{animation:fade .55s ease-out backwards}
   .l0{animation-delay:0.180s}.l1{animation-delay:0.235s}.l2{animation-delay:0.290s}.l3{animation-delay:0.345s}.l4{animation-delay:0.400s}.l5{animation-delay:0.455s}.l6{animation-delay:0.510s}.l7{animation-delay:0.565s}.l8{animation-delay:0.620s}.l9{animation-delay:0.675s}
-  .sheentext{font-size:58px;font-weight:700;letter-spacing:-2px;fill:#58a6ff}
+  .sheentext{font-size:58px;font-weight:700;letter-spacing:-2px;fill:var(--accent)}
   .sheenbar{animation:sweepx 9s cubic-bezier(.4,0,.2,1) 1.6s infinite}
-  .rule{stroke:#58a6ff;stroke-width:2;stroke-linecap:round;stroke-dasharray:120;animation:draw 1.1s cubic-bezier(.2,.7,.2,1) .75s backwards}
-  .caret{fill:#58a6ff;animation:blink 2.4s steps(1) infinite}
-  .rot{font-size:15px;fill:#8b949e;opacity:0;animation:cycle 30s ease-in-out infinite}
+  .rule{stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-dasharray:120;animation:draw 1.1s cubic-bezier(.2,.7,.2,1) .75s backwards}
+  .caret{fill:var(--accent);animation:blink 2.4s steps(1) infinite}
+  .rot{font-size:15px;fill:var(--dim);opacity:0;animation:cycle 30s ease-in-out infinite}
   .r0{opacity:1}
   .r0{animation-delay:0s}.r1{animation-delay:6s}.r2{animation-delay:12s}.r3{animation-delay:18s}.r4{animation-delay:24s}
-  .ring{fill:none;stroke:#2c333c;stroke-width:1}
-  .cross{stroke:#2c333c;stroke-width:1;opacity:.7}
-  .wedge{fill:#58a6ff;opacity:.10}
+  .ring{fill:none;stroke:var(--line);stroke-width:1}
+  .cross{stroke:var(--line);stroke-width:1;opacity:.7}
+  .wedge{fill:var(--accent);opacity:.10}
   .spin{transform-origin:772px 95px;animation:spin 8.0s linear infinite}
-  .beam{stroke:#58a6ff;stroke-width:1.4;opacity:.75}
-  .blip{fill:#58a6ff;opacity:0;animation:blip 8.0s linear infinite}
+  .beam{stroke:var(--accent);stroke-width:1.4;opacity:.75}
+  .blip{fill:var(--accent);opacity:0;animation:blip 8.0s linear infinite}
   .b0{animation-delay:0.78s}.b1{animation-delay:3.33s}.b2{animation-delay:5.67s}
   @keyframes fade{from{opacity:0}to{opacity:1}}
   @keyframes sweepx{0%{transform:translateX(0)}45%,100%{transform:translateX(720px)}}
@@ -36,7 +38,7 @@
 </style>
 <defs>
   <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-    <circle cx="1" cy="1" r="1" fill="#2c333c"/>
+    <circle cx="1" cy="1" r="1" style="fill:var(--line)"/>
   </pattern>
   <linearGradient id="gridFade" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="#fff" stop-opacity="0"/>
