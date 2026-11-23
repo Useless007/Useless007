@@ -26,7 +26,7 @@ THEMES = {
     "dark": {
         "ink": "#e6edf3",
         "dim": "#8b949e",
-        "faint": "#6e7681",
+        "faint": "#7d8590",
         "line": "#2c333c",
         "accent": "#58a6ff",
         "ok": "#3fb950",
@@ -34,7 +34,7 @@ THEMES = {
     "light": {
         "ink": "#1f2328",
         "dim": "#59636e",
-        "faint": "#818b98",
+        "faint": "#6e7781",
         "line": "#d1d9e0",
         "accent": "#0969da",
         "ok": "#1a7f37",
@@ -429,7 +429,7 @@ def private_panel():
         f"  .panel{{fill:none;stroke:{c['line']};stroke-width:1}}",
         f"  .sep{{stroke:{c['line']};stroke-width:1}}",
         f"  .lock{{fill:none;stroke:{c['faint']};stroke-width:1.3;stroke-linejoin:round}}",
-        f"  .name{{font-size:14px;font-weight:700;fill:{c['ink']}}}",
+        f"  .name{{font-size:15px;font-weight:700;fill:{c['ink']}}}",
         f"  .desc{{font-size:{fs}px;fill:{c['dim']}}}",
         chip_style(c),
     ])

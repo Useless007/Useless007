@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 158" width="436" height="158" role="img" aria-label="nebula-guard: SSH honeypot. A Go agent feeds Cowrie logs to a local Gemma model and sends a Thai read of each intrusion to Telegram.">
 <title>nebula-guard: SSH honeypot. A Go agent feeds Cowrie logs to a local Gemma model and sends a Thai read of each intrusion to Telegram.</title>
 <style>
-  svg{--ink:#1f2328;--dim:#59636e;--faint:#818b98;--line:#d1d9e0;--accent:#0969da;--ok:#1a7f37}
-  @media (prefers-color-scheme:dark){svg{--ink:#e6edf3;--dim:#8b949e;--faint:#6e7681;--line:#2c333c;--accent:#58a6ff;--ok:#3fb950}}
+  svg{--ink:#1f2328;--dim:#59636e;--faint:#6e7781;--line:#d1d9e0;--accent:#0969da;--ok:#1a7f37}
+  @media (prefers-color-scheme:dark){svg{--ink:#e6edf3;--dim:#8b949e;--faint:#7d8590;--line:#2c333c;--accent:#58a6ff;--ok:#3fb950}}
   text{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace}
   .panel{fill:none;stroke:var(--line);stroke-width:1}
   .name{font-size:15px;font-weight:700;fill:var(--ink)}

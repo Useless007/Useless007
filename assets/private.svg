@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 304" width="880" height="304" role="img" aria-label="Private work: icefactory-app: Multi-tenant plant management for an ice factory, delivered in stages. Every query scopes to the tenant and branch on the session, never to what the request sends. Every write lands in an append-only audit log, and the tests fail if either rule breaks. guess-my-song: Guess-the-song game built from the player&#x27;s own Spotify library. Hono on Cloudflare Workers, one Durable Object per session, and one hostname for both apps, so the cookie stays first-party and there is no CORS. pea-calculator-backup: Electricity-meter tracker. The app encrypts the database before it leaves the machine, the key never enters Git or the image, and the scheduler runs the backups it missed.">
 <title>Private work: icefactory-app: Multi-tenant plant management for an ice factory, delivered in stages. Every query scopes to the tenant and branch on the session, never to what the request sends. Every write lands in an append-only audit log, and the tests fail if either rule breaks. guess-my-song: Guess-the-song game built from the player&#x27;s own Spotify library. Hono on Cloudflare Workers, one Durable Object per session, and one hostname for both apps, so the cookie stays first-party and there is no CORS. pea-calculator-backup: Electricity-meter tracker. The app encrypts the database before it leaves the machine, the key never enters Git or the image, and the scheduler runs the backups it missed.</title>
 <style>
-  svg{--ink:#1f2328;--dim:#59636e;--faint:#818b98;--line:#d1d9e0;--accent:#0969da;--ok:#1a7f37}
-  @media (prefers-color-scheme:dark){svg{--ink:#e6edf3;--dim:#8b949e;--faint:#6e7681;--line:#2c333c;--accent:#58a6ff;--ok:#3fb950}}
+  svg{--ink:#1f2328;--dim:#59636e;--faint:#6e7781;--line:#d1d9e0;--accent:#0969da;--ok:#1a7f37}
+  @media (prefers-color-scheme:dark){svg{--ink:#e6edf3;--dim:#8b949e;--faint:#7d8590;--line:#2c333c;--accent:#58a6ff;--ok:#3fb950}}
   text{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace}
   .panel{fill:none;stroke:var(--line);stroke-width:1}
   .sep{stroke:var(--line);stroke-width:1}
   .lock{fill:none;stroke:var(--faint);stroke-width:1.3;stroke-linejoin:round}
-  .name{font-size:14px;font-weight:700;fill:var(--ink)}
+  .name{font-size:15px;font-weight:700;fill:var(--ink)}
   .desc{font-size:12px;fill:var(--dim)}
   .chip{fill:none;stroke:var(--line);stroke-width:1}
   .chipt{font-size:10.5px;fill:var(--faint);text-anchor:middle}
