@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 158" width="436" height="158" role="img" aria-label="nebula-guard: SSH honeypot. A Go agent feeds Cowrie logs to a local Gemma model and sends a Thai read of each intrusion to Telegram.">
+<title>nebula-guard: SSH honeypot. A Go agent feeds Cowrie logs to a local Gemma model and sends a Thai read of each intrusion to Telegram.</title>
+<style>
+  text{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace}
+  .panel{fill:none;stroke:#d1d9e0;stroke-width:1}
+  .name{font-size:15px;font-weight:700;fill:#1f2328}
+  .desc{font-size:12px;fill:#59636e}
+  .chip{fill:none;stroke:#d1d9e0;stroke-width:1}
+  .chipt{font-size:10.5px;fill:#818b98;text-anchor:middle}
+</style>
+<rect class="panel" x=".5" y=".5" width="435" height="157" rx="12"/>
+<text class="name" x="22" y="38">nebula-guard</text>
+<text class="desc" x="22" y="66">SSH honeypot. A Go agent feeds Cowrie logs to a local</text><text class="desc" x="22" y="84">Gemma model and sends a Thai read of each intrusion to</text><text class="desc" x="22" y="102">Telegram.</text>
+<rect class="chip" x="22.0" y="116" width="28.6" height="20" rx="5"/><text class="chipt" x="36.3" y="129.8">Go</text><rect class="chip" x="56.6" y="116" width="60.2" height="20" rx="5"/><text class="chipt" x="86.8" y="129.8">Next.js</text><rect class="chip" x="122.9" y="116" width="79.2" height="20" rx="5"/><text class="chipt" x="162.5" y="129.8">PostgreSQL</text><rect class="chip" x="208.1" y="116" width="53.9" height="20" rx="5"/><text class="chipt" x="235.1" y="129.8">Ollama</text><rect class="chip" x="268.0" y="116" width="53.9" height="20" rx="5"/><text class="chipt" x="295.0" y="129.8">Docker</text>
+</svg>

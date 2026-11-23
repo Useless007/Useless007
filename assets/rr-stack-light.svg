@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 268" width="880" height="268" role="img" aria-label="rr-stack: React Router + Rust (Axum), typed from the database to the screen">
+<title>rr-stack: React Router + Rust (Axum), typed from the database to the screen</title>
+<style>
+  text{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace}
+  .panel{fill:none;stroke:#0969da;stroke-opacity:.45;stroke-width:1}
+  .title{font-size:40px;font-weight:700;letter-spacing:-1.5px;fill:#1f2328}
+  .tag{font-size:14px;fill:#59636e}
+  .layer{font-size:10.5px;fill:#818b98}
+  .box{fill:#0969da;fill-opacity:.08;stroke:#0969da;stroke-width:1}
+  .code{font-size:11px;fill:#1f2328}
+  .link{fill:none;stroke:#0969da;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+  .cmd{font-size:13px;fill:#59636e}
+  .exit{font-size:13px;font-weight:700;fill:#1a7f37}
+  .why{font-size:13px;fill:#818b98}
+  .b0{animation:b0 9.0s linear infinite}
+  .k0{animation:k0 9.0s linear infinite}
+  .a0{animation:a0 9.0s linear infinite}
+  .b1{animation:b1 9.0s linear infinite}
+  .k1{animation:k1 9.0s linear infinite}
+  .a1{animation:a1 9.0s linear infinite}
+  .b2{animation:b2 9.0s linear infinite}
+  .k2{animation:k2 9.0s linear infinite}
+  .a2{animation:a2 9.0s linear infinite}
+  .b3{animation:b3 9.0s linear infinite}
+  .k3{animation:k3 9.0s linear infinite}
+  .a3{animation:a3 9.0s linear infinite}
+  .b4{animation:b4 9.0s linear infinite}
+  .k4{animation:k4 9.0s linear infinite}
+  .res{animation:res 9.0s linear infinite}
+  @keyframes b0{0%,5.56%{fill-opacity:0;stroke:#d1d9e0}8.89%,86.67%{fill-opacity:.08;stroke:#0969da}93.33%,100%{fill-opacity:0;stroke:#d1d9e0}}
+  @keyframes k0{0%,5.56%{fill:#818b98}8.89%,86.67%{fill:#1f2328}93.33%,100%{fill:#818b98}}
+  @keyframes a0{0%,7.78%{stroke-dashoffset:31.0}12.22%,86.67%{stroke-dashoffset:0}95.56%,100%{stroke-dashoffset:31.0}}
+  @keyframes b1{0%,13.33%{fill-opacity:0;stroke:#d1d9e0}16.67%,86.67%{fill-opacity:.08;stroke:#0969da}93.33%,100%{fill-opacity:0;stroke:#d1d9e0}}
+  @keyframes k1{0%,13.33%{fill:#818b98}16.67%,86.67%{fill:#1f2328}93.33%,100%{fill:#818b98}}
+  @keyframes a1{0%,15.56%{stroke-dashoffset:31.0}20.00%,86.67%{stroke-dashoffset:0}95.56%,100%{stroke-dashoffset:31.0}}
+  @keyframes b2{0%,21.11%{fill-opacity:0;stroke:#d1d9e0}24.44%,86.67%{fill-opacity:.08;stroke:#0969da}93.33%,100%{fill-opacity:0;stroke:#d1d9e0}}
+  @keyframes k2{0%,21.11%{fill:#818b98}24.44%,86.67%{fill:#1f2328}93.33%,100%{fill:#818b98}}
+  @keyframes a2{0%,23.33%{stroke-dashoffset:31.0}27.78%,86.67%{stroke-dashoffset:0}95.56%,100%{stroke-dashoffset:31.0}}
+  @keyframes b3{0%,28.89%{fill-opacity:0;stroke:#d1d9e0}32.22%,86.67%{fill-opacity:.08;stroke:#0969da}93.33%,100%{fill-opacity:0;stroke:#d1d9e0}}
+  @keyframes k3{0%,28.89%{fill:#818b98}32.22%,86.67%{fill:#1f2328}93.33%,100%{fill:#818b98}}
+  @keyframes a3{0%,31.11%{stroke-dashoffset:31.0}35.56%,86.67%{stroke-dashoffset:0}95.56%,100%{stroke-dashoffset:31.0}}
+  @keyframes b4{0%,36.67%{fill-opacity:0;stroke:#d1d9e0}40.00%,86.67%{fill-opacity:.08;stroke:#0969da}93.33%,100%{fill-opacity:0;stroke:#d1d9e0}}
+  @keyframes k4{0%,36.67%{fill:#818b98}40.00%,86.67%{fill:#1f2328}93.33%,100%{fill:#818b98}}
+  @keyframes res{0%,44.44%{opacity:0}47.78%,86.67%{opacity:1}93.33%,100%{opacity:0}}
+  @media (prefers-reduced-motion:reduce){.box,.code,.link,.res{animation:none}}
+</style>
+<defs>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="#d1d9e0"/>
+  </pattern>
+  <linearGradient id="gridFade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+    <stop offset="0.45" stop-color="#fff" stop-opacity="0.5"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0.9"/>
+  </linearGradient>
+  <mask id="gridMask"><rect width="880" height="268" fill="url(#gridFade)"/></mask>
+</defs>
+<rect width="880" height="268" rx="16" fill="url(#grid)" mask="url(#gridMask)" opacity=".55"/>
+<rect class="panel" x=".5" y=".5" width="879" height="267" rx="16"/>
+<text class="title" x="36" y="78">rr-stack</text>
+<text class="tag" x="38" y="110">React Router + Rust (Axum), typed from the database to the screen.</text>
+<text class="layer" x="36.0" y="157">postgres</text>
+<rect class="box b0" x="36.0" y="166" width="145.8" height="32" rx="6"/><text class="code k0" x="46.0" y="186.0">title text NOT NULL</text>
+<path class="link a0" d="M186.8 182.0 H206.5 m-4 -4 l4 4 l-4 4" stroke-dasharray="31.0"/>
+<text class="layer" x="211.5" y="157">rust</text>
+<rect class="box b1" x="211.5" y="166" width="132.6" height="32" rx="6"/><text class="code k1" x="221.5" y="186.0">pub title: String</text>
+<path class="link a1" d="M349.1 182.0 H368.7 m-4 -4 l4 4 l-4 4" stroke-dasharray="31.0"/>
+<text class="layer" x="373.7" y="157">openapi.json</text>
+<rect class="box b2" x="373.7" y="166" width="198.8" height="32" rx="6"/><text class="code k2" x="383.7" y="186.0">&quot;title&quot;: {&quot;type&quot;: &quot;string&quot;}</text>
+<path class="link a2" d="M577.5 182.0 H597.2 m-4 -4 l4 4 l-4 4" stroke-dasharray="31.0"/>
+<text class="layer" x="602.2" y="157">typescript</text>
+<rect class="box b3" x="602.2" y="166" width="112.7" height="32" rx="6"/><text class="code k3" x="612.2" y="186.0">title: string;</text>
+<path class="link a3" d="M719.9 182.0 H739.5 m-4 -4 l4 4 l-4 4" stroke-dasharray="31.0"/>
+<text class="layer" x="744.5" y="157">react router</text>
+<rect class="box b4" x="744.5" y="166" width="99.5" height="32" rx="6"/><text class="code k4" x="754.5" y="186.0">{todo.title}</text>
+<text class="cmd" x="36" y="236">$ bun run check</text>
+<text class="exit res" x="171.4" y="236">exit 0</text>
+<text class="why res" x="232.3" y="236">the SQL, the API, the contract and the UI agree</text>
+</svg>
